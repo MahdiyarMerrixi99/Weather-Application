@@ -81,6 +81,28 @@ public class MainActivity extends AppCompatActivity {
                 binding.t4Titile.setTextSize(20);
                 binding.t4Titile.setText("Min Temp");
                 binding.t4Titile.setTextAlignment(TEXT_ALIGNMENT_CENTER);
+                //animation
+                //humidity
+                binding.humedityAnim.setAnimation(R.raw.animation_humedelty);
+                binding.humedityAnim.playAnimation();
+                binding.humedityAnim.loop(true);
+                //max temp
+                binding.t3Anim.setAnimation(R.raw.animation_temp);
+                binding.t3Anim.playAnimation();
+                binding.t3Anim.loop(true);
+                //wind
+                binding.t2Anim.setAnimation(R.raw.animation_wind);
+                binding.t2Anim.playAnimation();
+                binding.t2Anim.loop(true);
+                //min temp
+                binding.t4Anim.setAnimation(R.raw.animation_temptmin);
+                binding.t4Anim.playAnimation();
+                binding.t4Anim.loop(true);
+                //topanim
+                binding.weatherAnim.setAnimation(R.raw.animation_cloudy2);
+                binding.t4Anim.playAnimation();
+                binding.t4Anim.loop(true);
+
             }
             @Override
             public void onFailure(Call<CurrentWeatherResponse> call, Throwable t) {
